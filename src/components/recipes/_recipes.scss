@@ -1,0 +1,6 @@
+.recipe-list__item:not(:last-child) {
+	margin-right: 30px;
+}
+.recipe-list__item:last-child {
+	margin-right: 0;
+}

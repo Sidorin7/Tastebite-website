@@ -1,0 +1,32 @@
+.categories {
+	padding-bottom: 80px;
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.22222;
+		color: #000;
+		margin-bottom: 40px;
+	}
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+
+		&__item {
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+			&--text {
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 1.4;
+				letter-spacing: -0.01em;
+				text-align: center;
+			}
+
+			&--img {
+				margin-bottom: 13px;
+			}
+		}
+	}
+}
