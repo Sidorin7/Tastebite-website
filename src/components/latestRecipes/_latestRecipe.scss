@@ -1,0 +1,41 @@
+.latestRecipes__inner {
+	padding-bottom: 84px;
+}
+.latestRecipes__title {
+	margin-bottom: 40px;
+
+	h2 {
+		font-family: font-accent;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.22222;
+		color: #000;
+		margin-bottom: 40px;
+	}
+}
+
+.latestRecipes__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) repeat(2, 1fr);
+}
+.recipe-list__item:not(:last-child) {
+	margin-right: 0;
+}
+.latestRecipes__box {
+	display: flex;
+	justify-content: center;
+}
+
+.latestRecipes__btn {
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: -0.01em;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 4px;
+	padding: 13px 48px;
+}
+
+.hiddden {
+	display: none;
+}

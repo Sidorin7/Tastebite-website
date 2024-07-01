@@ -145,12 +145,177 @@ const collectionsList = [
 	},
 ]
 
+import breakfast from '../components/latestRecipes/img/breakfast.jpg'
+import brownies from '../components/latestRecipes/img/brownies.jpg'
+import burgers from '../components/latestRecipes/img/burgers.jpg'
+import carrot from '../components/latestRecipes/img/carrot.jpg'
+import chips from '../components/latestRecipes/img/chips.jpg'
+import crabbery from '../components/latestRecipes/img/crabbery.jpg'
+import cupcakes from '../components/latestRecipes/img/cupcakes.jpg'
+import dried from '../components/latestRecipes/img/dried.jpg'
+import eggs from '../components/latestRecipes/img/eggs.jpg'
+import jar from '../components/latestRecipes/img/jar.jpg'
+import noodles from '../components/latestRecipes/img/noodles.jpg'
+import oatmeal from '../components/latestRecipes/img/oatmeal.jpg'
+import panacotta from '../components/latestRecipes/img/panacotta.jpg'
+import pancakes from '../components/latestRecipes/img/pancakes.jpg'
+import rice from '../components/latestRecipes/img/rice.jpg'
+import roasted from '../components/latestRecipes/img/roasted.jpg'
+import sMilkshake from '../components/latestRecipes/img/sMilkshake.jpg'
+import salad from '../components/latestRecipes/img/salad.jpg'
+import sandwich from '../components/latestRecipes/img/sandwich.jpg'
+import sauce from '../components/latestRecipes/img/sauce.jpg'
+import scores from '../components/latestRecipes/img/scores.jpg'
+import smoothie from '../components/latestRecipes/img/smoothie.jpg'
+import soup from '../components/latestRecipes/img/soup.jpg'
+import tea from '../components/latestRecipes/img/tea.jpg'
+
 const latestRecipes = [
 	{
 		id: 1,
-		title: 'Popular Categories',
-		text: 'Desserts',
-		img: desserts,
+		text: 'Caramel Strawberry Milkshake',
+		img: sMilkshake,
+	},
+	{
+		id: 2,
+		text: 'Cashew Vegan Rice',
+		img: rice,
+	},
+	{
+		id: 3,
+		text: 'Smoked Salmon Salad Sandwich',
+		img: sandwich,
+	},
+	{
+		id: 4,
+		text: 'Salmon in Creamy Sun Dried Tomato Sauce ',
+		img: dried,
+	},
+	{
+		id: 5,
+		text: 'Healthy Jam Waffle Breakfast',
+		img: breakfast,
+	},
+	{
+		id: 6,
+		text: 'Chocolate and Banana Jar Cake',
+		img: jar,
+	},
+	{
+		id: 7,
+		text: 'Caramel Blueberry Scones',
+		img: scores,
+	},
+	{
+		id: 8,
+		text: 'Blueberry Carrot Cake',
+		img: carrot,
+	},
+	{
+		id: 9,
+		text: 'Vegan Cauliflower Salad',
+		img: salad,
+	},
+	{
+		id: 10,
+		text: 'Roasted Red Pepper Soup',
+		img: soup,
+	},
+
+	{
+		id: 11,
+		text: 'Silky Smooth Panacotta',
+		img: eggs,
+	},
+	{
+		id: 12,
+		text: 'Pork Shoulder Cashew Noodles',
+		img: noodles,
+	},
+	{
+		id: 13,
+		text: 'Gourmet Fillet in Roasted Almond Sauce',
+		img: roasted,
+	},
+	{
+		id: 14,
+		text: 'Cheesy Bacon Burger Sliders',
+		img: burgers,
+	},
+	{
+		id: 15,
+		text: 'Fig and Raisins Oatmeal',
+		img: oatmeal,
+	},
+	{
+		id: 16,
+		text: 'Silky Smooth Panacotta',
+		img: panacotta,
+	},
+
+	{
+		id: 17,
+		text: 'Triple Decker Cranberry Cake',
+		img: crabbery,
+	},
+	{
+		id: 18,
+		text: 'Very Berry Healthy Summer Smoothie',
+		img: smoothie,
+	},
+	{
+		id: 19,
+		text: 'Crispy Orange Chips',
+		img: chips,
+	},
+	{
+		id: 20,
+		text: 'Tumeric Lavendar Tea',
+		img: tea,
+	},
+	{
+		id: 21,
+		text: 'Blue Velvet Brownies',
+		img: brownies,
+	},
+	{
+		id: 22,
+		text: 'Birthday Cupcakes',
+		img: cupcakes,
+	},
+	{
+		id: 23,
+		text: 'Gourmet Fillet in Roasted Almond Sauce',
+		img: sauce,
+	},
+
+	{
+		id: 24,
+		text: 'Four Ingredient Oatmeal Pancakes',
+		img: pancakes,
+	},
+	{
+		id: 25,
+
+		text: 'Spinach and Cheese Pasta',
+		img: one,
+	},
+	{
+		id: 26,
+
+		text: 'Fancy Glazed Donuts',
+		img: two,
+	},
+	{
+		id: 27,
+		text: 'Mighty Cheesy Breakfast Burger',
+		img: three,
+	},
+	{
+		id: 28,
+
+		text: 'Mighty Cheesy Breakfast Burger',
+		img: six,
 	},
 ]
 export {

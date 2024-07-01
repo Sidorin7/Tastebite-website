@@ -1,0 +1,28 @@
+.recipe-list {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		margin-right: 0;
+		margin-bottom: 64px;
+		&--img {
+			object-fit: cover;
+			border-radius: 6px;
+			margin: 0;
+		}
+
+		&--text {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 1.4;
+			letter-spacing: -0.01em;
+		}
+	}
+}
+.recipe-list__item--img {
+	margin: 0;
+}
+
+.recipe-list__item:not(:last-child) {
+	margin-right: 0;
+}
