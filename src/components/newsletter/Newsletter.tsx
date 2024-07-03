@@ -1,17 +1,19 @@
 import { SubmitErrorHandler, SubmitHandler, useForm } from 'react-hook-form'
+import { MyForm } from '../interfaces/form.interface'
 import './_newsletter.scss'
 
-interface MyForm {
-	email: string
-}
 const Newsletter = () => {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors },
-	} = useForm<MyForm>()
+	} = useForm<MyForm>({
+		mode: 'onChange',
+	})
 	const submit: SubmitHandler<MyForm> = data => {
 		console.log(data)
+		reset()
 	}
 	const error: SubmitErrorHandler<MyForm> = data => {
 		console.log(data)
@@ -33,14 +35,22 @@ const Newsletter = () => {
 								className='form-input'
 								type='email'
 								{...register('email', {
-									required: true,
+									required: 'Email is require field!',
+									pattern: {
+										value:
+											/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+										message: 'Please enter valid email!',
+									},
 								})}
-								aria-invalid={errors.email ? true : false}
+								// aria-invalid={errors.email ? true : false}
 								placeholder='Email Address'
 							/>
 							<button type='submit' className='form-btn'>
 								JOIN
 							</button>
+							{errors?.email && (
+								<div style={{ color: 'red' }}>{errors.email.message}</div>
+							)}
 						</form>
 						<div className='newsletter-copy'>
 							By joining our newsletter you agree to our Terms and Conditions

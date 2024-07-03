@@ -1,11 +1,11 @@
 import { collectionsList } from '../../helpers/recipeList'
-import { IRecipe } from '../interfaces'
+import { ICollection } from '../interfaces'
 
 import './_collections.scss'
 
 interface Props {
 	title: string
-	collectionsList: IRecipe[]
+	collectionsList: ICollection[]
 }
 const Collections = ({ title }: Props) => {
 	return (

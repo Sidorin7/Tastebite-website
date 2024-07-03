@@ -3,5 +3,8 @@ export interface IRecipe {
 	img: string
 	text: string
 	title: string
+}
+
+export interface ICollection extends IRecipe {
 	countRecipe: number
 }
