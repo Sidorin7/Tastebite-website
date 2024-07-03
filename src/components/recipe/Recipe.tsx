@@ -2,7 +2,12 @@ import StarRating from '../starsRating/StarRating'
 
 import './_recipe.scss'
 
-const Recipe = ({ img, text }) => {
+interface Props {
+	img: string
+	text: string
+}
+
+const Recipe = ({ img, text }: Props) => {
 	return (
 		<section className='recipe'>
 			<div className='recipe__inner'>

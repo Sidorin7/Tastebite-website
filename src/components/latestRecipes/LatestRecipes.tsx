@@ -1,9 +1,16 @@
 import { useState } from 'react'
 import { latestRecipes } from '../../helpers/recipeList'
+import { IRecipe } from '../interfaces'
 import RecipeCard from '../recipeCard/RecipeCard.jsx'
 import './_latestRecipe.scss'
 
-const LatestRecipes = ({ title }) => {
+interface Props {
+	title: string
+	latestRecipes: IRecipe[]
+	index: number
+}
+
+const LatestRecipes = ({ title }: Props) => {
 	const [visibleProducts, setVisibleProducts] = useState(24)
 	const handleShowMore = () => {
 		setVisibleProducts(prevVisibleProducts => prevVisibleProducts + 4)
@@ -22,7 +29,6 @@ const LatestRecipes = ({ title }) => {
 									text={lRecipes.text}
 									img={lRecipes.img}
 									key={index}
-									index={index}
 								/>
 							)
 						})}

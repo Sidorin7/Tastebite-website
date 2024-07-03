@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { SubmitErrorHandler, SubmitHandler, useForm } from 'react-hook-form'
 import './_newsletter.scss'
 
@@ -37,10 +35,12 @@ const Newsletter = () => {
 								{...register('email', {
 									required: true,
 								})}
-								aria-invalid={error.email ? true : false}
+								aria-invalid={errors.email ? true : false}
 								placeholder='Email Address'
 							/>
-							<button className='form-btn'>JOIN</button>
+							<button type='submit' className='form-btn'>
+								JOIN
+							</button>
 						</form>
 						<div className='newsletter-copy'>
 							By joining our newsletter you agree to our Terms and Conditions

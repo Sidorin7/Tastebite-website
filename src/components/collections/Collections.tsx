@@ -1,7 +1,13 @@
 import { collectionsList } from '../../helpers/recipeList'
+import { IRecipe } from '../interfaces'
 
 import './_collections.scss'
-const Collections = ({ title }) => {
+
+interface Props {
+	title: string
+	collectionsList: IRecipe[]
+}
+const Collections = ({ title }: Props) => {
 	return (
 		<section className='collections'>
 			<div className='container'>

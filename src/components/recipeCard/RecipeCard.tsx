@@ -1,6 +1,10 @@
 import './_recipeCard.scss'
 
-const RecipeCard = ({ img, text }) => {
+interface Props {
+	img: string
+	text: string
+}
+const RecipeCard = ({ img, text }: Props) => {
 	return (
 		<div className='recipe-list__item'>
 			<img className='recipe-list__item--img' src={img} alt='' />

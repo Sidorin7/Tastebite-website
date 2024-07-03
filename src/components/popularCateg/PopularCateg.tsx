@@ -1,9 +1,14 @@
 // import { categoriesList } from '../../helpers/popularCateg'
 
 import { popularCateg } from '../../helpers/recipeList'
-
+import { IRecipe } from '../interfaces'
 import './_popularCateg.scss'
-const PopularCateg = ({ title }) => {
+
+interface Props {
+	title: string
+	popularCateg: IRecipe[]
+}
+const PopularCateg = ({ title }: Props) => {
 	return (
 		<section className='categories'>
 			<div className='container'>

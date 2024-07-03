@@ -1,10 +1,14 @@
 // import StarRating from "../starsRating/StarRating";
-
+import { IRecipe } from '../interfaces/index'
 import Recipe from '../recipe/Recipe'
 import './_recipes.scss'
 // import './_recipes.scss'
-const elementsPerPage = 0
-const Recipes = ({ title, recipeO }) => {
+
+interface Props {
+	title: string
+	recipeO: IRecipe[]
+}
+const Recipes = ({ title, recipeO }: Props) => {
 	return (
 		<section>
 			<div className='container'>
@@ -14,15 +18,7 @@ const Recipes = ({ title, recipeO }) => {
 					</div>
 					<div className='recipe-list'>
 						{recipeO.map((recipe, index) => {
-							return (
-								<Recipe
-									text={recipe.text}
-									img={recipe.img}
-									title={recipe.title}
-									key={index}
-									index={index}
-								/>
-							)
+							return <Recipe text={recipe.text} img={recipe.img} key={index} />
 						})}
 					</div>
 				</div>
